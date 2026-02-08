@@ -1,0 +1,63 @@
+/* General page styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, pink, lavender);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: crimson;
+  color: white;
+  padding: 20px;
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Navigation links */
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Countdown */
+#countdown {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: darkred;
+}
+
+/* Heart button */
+button {
+  margin-top: 30px;
+  font-size: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+button:hover {
+  transform: scale(1.2);
+}
+
+/* Animated images for day pages */
+.animated {
+  width: 400px;
+  margin-top: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
